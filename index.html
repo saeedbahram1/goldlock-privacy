@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoldLock Privacy Policy</title>
+<meta name="description" content="GoldLock Chrome Extension Privacy Policy">
+<style>
+:root{
+  --gold:#FFD700;
+  --bg:#0b0b0d;
+  --panel:#151518;
+  --panel2:#1b1b20;
+  --text:#f5f5f7;
+  --muted:#b4b4bd;
+  --border:rgba(255,215,0,.18);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:radial-gradient(circle at top,rgba(255,215,0,.08),transparent 36%),var(--bg);
+  line-height:1.75;
+}
+.wrap{max-width:900px;margin:0 auto;padding:56px 22px}
+header{
+  background:linear-gradient(180deg,rgba(255,215,0,.10),rgba(255,215,0,.03));
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:34px 30px;
+  box-shadow:0 20px 70px rgba(0,0,0,.35);
+}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--gold);font-weight:700;font-size:13px;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+.logo{
+  width:14px;height:14px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 18px rgba(255,215,0,.65)
+}
+h1{margin:10px 0 4px;font-size:42px;line-height:1.15}
+.sub{margin:0;color:var(--muted)}
+main{margin-top:22px}
+section{
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:20px;
+  padding:26px 28px;
+  margin-bottom:16px;
+}
+h2{margin:0 0 10px;font-size:22px}
+p{margin:9px 0}
+ul{padding-left:20px}
+.note{
+  border-left:3px solid var(--gold);
+  background:rgba(255,215,0,.045);
+  padding:14px 16px;
+  border-radius:10px;
+}
+footer{
+  color:var(--muted);font-size:14px;text-align:center;padding:18px 0 8px
+}
+a{color:var(--gold)}
+.small{font-size:14px;color:var(--muted)}
+.lang{
+  margin-top:12px;font-size:13px;color:var(--muted)
+}
+.rtl{direction:rtl;text-align:right}
+@media(max-width:640px){
+  h1{font-size:32px}
+  header,section{padding:22px 20px}
+  .wrap{padding:28px 14px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge"><span class="logo"></span> GoldLock</div>
+    <h1>Privacy Policy</h1>
+    <p class="sub">Chrome Extension — GoldLock</p>
+    <div class="lang">Last updated: September 20, 2026</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Overview</h2>
+      <p>GoldLock is a Chrome extension designed to protect normal web browsing with a user-defined password.</p>
+      <p>This Privacy Policy explains what information GoldLock stores, how it is used, and what information is not collected or transmitted.</p>
+    </section>
+
+    <section>
+      <h2>2. Data Storage</h2>
+      <p>GoldLock stores security settings and extension preferences locally in the user's Chrome profile. This may include:</p>
+      <ul>
+        <li>Password verification data and cryptographic salt.</li>
+        <li>Recovery Key verification data and cryptographic salt.</li>
+        <li>Selected language and lock-related preferences.</li>
+        <li>Other settings required for GoldLock to operate.</li>
+      </ul>
+      <p>Passwords and Recovery Keys are not stored in plain text.</p>
+    </section>
+
+    <section>
+      <h2>3. Browsing and Navigation Data</h2>
+      <p>GoldLock processes browser navigation information locally when necessary to enforce its core browser-lock feature. When the browser is locked, GoldLock may use the destination URL of a protected navigation to redirect the tab to the GoldLock lock screen and restore access after successful authentication.</p>
+      <div class="note"><strong>Important:</strong> GoldLock does not collect, sell, rent, or share browsing history, webpage content, passwords, Recovery Keys, or other personal information with external servers.</div>
+    </section>
+
+    <section>
+      <h2>4. Accounts and Online Recovery</h2>
+      <p>GoldLock does not require a user account, email address, or online recovery service. Recovery is designed to work offline using the user's Recovery Key.</p>
+      <p>The Recovery Key is generated locally. Its plain-text value is shown to the user when generated and is not persisted by GoldLock as plain text.</p>
+    </section>
+
+    <section>
+      <h2>5. Third-Party Services</h2>
+      <p>GoldLock does not use third-party analytics, advertising, tracking, or remote recovery services.</p>
+    </section>
+
+    <section>
+      <h2>6. Remote Code</h2>
+      <p>GoldLock does not download or execute remote JavaScript or other remotely hosted executable code.</p>
+    </section>
+
+    <section>
+      <h2>7. Managed Protection</h2>
+      <p>The optional Chrome Managed Protection feature relies on administrator policies configured outside the extension. GoldLock only reads the resulting managed state and does not modify Chrome policies from inside the extension.</p>
+    </section>
+
+    <section>
+      <h2>8. Security</h2>
+      <p>GoldLock uses cryptographic hashing with unique salts for local password and Recovery Key verification data. The extension is designed to keep the verification material inside the user's Chrome profile rather than transmitting it to a remote service.</p>
+    </section>
+
+    <section>
+      <h2>9. Changes to This Policy</h2>
+      <p>If GoldLock's data practices materially change, this Privacy Policy will be updated accordingly.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <p>For privacy questions, please use the developer contact information provided on the GoldLock Chrome Web Store listing.</p>
+      <p class="small">This page is intended to describe the privacy practices of the GoldLock Chrome extension.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 GoldLock</footer>
+</div>
+</body>
+</html>
