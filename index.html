@@ -30,7 +30,7 @@ nav {
     overflow: visible;
     scrollbar-width: none;
 }
-nav a{flex:1 1 0;max-width:none;min-width:0;text-align:center;text-decoration:none;color:var(--muted);font-size:clamp(10px,1.12vw,12px);padding:7px 7px;border:1px solid var(--line);border-radius:10px;white-space:nowrap;overflow:hidden;text-overflow:clip;line-height:1.3;display:flex;align-items:center;justify-content:center;background:rgba(255,215,0,.025)}
+nav a{flex:none;text-decoration:none;color:var(--muted);font-size:12px;padding:5px 11px;border:1px solid transparent;border-radius:999px;white-space:nowrap}
 nav a:hover,nav a:focus-visible{color:var(--gold);border-color:var(--line);background:rgba(255,215,0,.06);outline:none}
 main{max-width:900px;margin:auto;padding:38px 20px 65px}
 .hero{text-align:center;margin-bottom:28px}
@@ -52,8 +52,7 @@ html[lang=fa] body{text-align:right}
 #topButton svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 @media(max-width:560px){
 .bar{padding:10px 13px}.brand{font-size:16px}.seg button{padding:6px 10px}
-nav{padding:0 8px 10px;gap:4px}
-nav a{font-size:0;min-height:32px;padding:5px 3px;border-radius:8px}
+nav{padding-inline:10px}
 nav a::before{font-size:11px;line-height:1.2;font-weight:800;color:var(--gold)}
 nav a:nth-child(1)::before{content:"1"}nav a:nth-child(2)::before{content:"2"}nav a:nth-child(3)::before{content:"3"}nav a:nth-child(4)::before{content:"4"}nav a:nth-child(5)::before{content:"5"}nav a:nth-child(6)::before{content:"6"}nav a:nth-child(7)::before{content:"7"}nav a:nth-child(8)::before{content:"8"}nav a:nth-child(9)::before{content:"9"}nav a:nth-child(10)::before{content:"10"}
 main{padding:28px 14px 50px}section.card{padding:18px}#topButton{right:15px;bottom:16px;width:46px;height:46px}
@@ -111,7 +110,7 @@ main{padding:28px 14px 50px}section.card{padding:18px}#topButton{right:15px;bott
 <script>
 (function(){
  const root=document.documentElement, nav=document.getElementById("sectionNav"), topBtn=document.getElementById("topButton");
- const labels={en:["Overview","Storage","Browsing","Recovery","Services","Code","Managed","Security","Changes","Contact"],fa:["کلی","ذخیره","مرور","بازیابی","سرویس‌ها","کد","مدیریت","امنیت","تغییرات","تماس"]};
+ const labels={en:["Overview","Data Storage","Browsing Data","Accounts & Recovery","Third-Party Services","Remote Code","Managed Protection","Security","Policy Changes","Contact"],fa:["مرور کلی","ذخیره‌سازی داده‌ها","داده‌های مرور","حساب و بازیابی","خدمات اشخاص ثالث","کد از راه دور","محافظت مدیریت‌شده","امنیت","تغییرات سیاست","تماس"]};
  const titles={en:"Privacy Policy — GoldLock",fa:"سیاست حریم خصوصی — قفل طلایی"};
  function renderNav(lang){
    nav.replaceChildren();
