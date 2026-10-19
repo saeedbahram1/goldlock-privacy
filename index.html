@@ -19,8 +19,8 @@ header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rg
 .seg{display:flex;flex:none;padding:3px;border:1px solid rgba(255,215,0,.35);border-radius:999px;background:rgba(255,215,0,.06)}
 .seg button{border:0;cursor:pointer;padding:6px 13px;border-radius:999px;background:transparent;color:var(--gold);font:700 13px inherit;font-family:inherit;transition:.2s}
 .seg button[aria-pressed=true]{background:var(--gold);color:#0a0a0c}
-nav{max-width:900px;margin:auto;padding:0 16px 10px;display:flex;gap:7px;overflow:visible;flex-wrap:wrap;justify-content:center;scrollbar-width:none}
-nav a{flex:1 1 112px;max-width:190px;min-width:0;text-align:center;text-decoration:none;color:var(--muted);font-size:12px;padding:6px 10px;border:1px solid transparent;border-radius:12px;white-space:normal;overflow-wrap:anywhere;line-height:1.5}
+nav{max-width:900px;margin:auto;padding:0 12px 10px;display:flex;flex-wrap:nowrap;align-items:stretch;gap:4px;overflow:visible;scrollbar-width:none}
+nav a{flex:1 1 0;max-width:none;min-width:0;text-align:center;text-decoration:none;color:var(--muted);font-size:clamp(9px,1.1vw,12px);padding:6px 3px;border:1px solid transparent;border-radius:10px;white-space:normal;overflow-wrap:normal;word-break:normal;line-height:1.3;display:flex;align-items:center;justify-content:center}
 nav a:hover,nav a:focus-visible{color:var(--gold);border-color:var(--line);background:rgba(255,215,0,.06);outline:none}
 main{max-width:900px;margin:auto;padding:38px 20px 65px}
 .hero{text-align:center;margin-bottom:28px}
@@ -40,7 +40,14 @@ html[lang=fa] body{text-align:right}
 #topButton.show{opacity:1;visibility:visible;transform:translateY(0)}
 #topButton:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(0,0,0,.5),0 0 24px rgba(255,215,0,.4)}
 #topButton svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:560px){.bar{padding:10px 13px}.brand{font-size:16px}.seg button{padding:6px 10px}nav{padding-inline:10px}main{padding:28px 14px 50px}section.card{padding:18px}#topButton{right:15px;bottom:16px;width:46px;height:46px}}
+@media(max-width:560px){
+.bar{padding:10px 13px}.brand{font-size:16px}.seg button{padding:6px 10px}
+nav{padding:0 8px 10px;gap:3px}
+nav a{font-size:0;min-height:30px;padding:4px 0;border-radius:8px}
+nav a::before{font-size:11px;line-height:1.2;font-weight:800;color:var(--gold)}
+nav a:nth-child(1)::before{content:"1"}nav a:nth-child(2)::before{content:"2"}nav a:nth-child(3)::before{content:"3"}nav a:nth-child(4)::before{content:"4"}nav a:nth-child(5)::before{content:"5"}nav a:nth-child(6)::before{content:"6"}nav a:nth-child(7)::before{content:"7"}nav a:nth-child(8)::before{content:"8"}nav a:nth-child(9)::before{content:"9"}nav a:nth-child(10)::before{content:"10"}
+main{padding:28px 14px 50px}section.card{padding:18px}#topButton{right:15px;bottom:16px;width:46px;height:46px}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 </style>
 </head>
@@ -56,7 +63,7 @@ html[lang=fa] body{text-align:right}
 <div class="hero">
   <h1 data-l="en">Privacy Policy</h1><h1 data-l="fa">سیاست حریم خصوصی</h1>
   <div class="sub" data-l="en">Chrome Extension — GoldLock</div><div class="sub" data-l="fa">افزونهٔ کروم — قفل طلایی (GoldLock)</div>
-  <span class="pill" data-l="en">Last updated: September 20, 2026</span><span class="pill" data-l="fa">آخرین به‌روزرسانی: ۲۰ سپتامبر ۲۰۲۶</span>
+  <span class="pill" data-l="en">Last updated: October 19, 2026</span><span class="pill" data-l="fa">آخرین به‌روزرسانی: ۲۷ مهر ۱۴۰۵</span>
 </div>
 
 <section class="card" data-l="en" data-sec="1"><h2><span class="n">1</span>Overview</h2><p>GoldLock is a Chrome extension designed to protect normal web browsing with a user-defined password.</p><p>This Privacy Policy explains what information GoldLock stores, how it is used, and what information is not collected or transmitted.</p></section>
